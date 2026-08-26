@@ -1,0 +1,4 @@
+[
+  { "kind": "markdown", "value": "# Subplots Test\nThis notebook tests matplotlib subplots." },
+  { "kind": "code", "value": "# Test subplots\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Create some data\nx = np.linspace(0, 10, 100)\n\n# Create subplots\nplt.figure(figsize=(10, 8))\n\nplt.subplot(2, 2, 1)\nplt.plot(x, np.sin(x))\nplt.title('Sine')\n\nplt.subplot(2, 2, 2)\nplt.plot(x, np.cos(x))\nplt.title('Cosine')\n\nplt.subplot(2, 2, 3)\nplt.plot(x, np.tan(x))\nplt.title('Tangent')\n\nplt.subplot(2, 2, 4)\nplt.scatter(x[:20], np.sin(x[:20]))\nplt.title('Sine Scatter')\n\nplt.tight_layout()\nplt.show()" }
+]

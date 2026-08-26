@@ -1,0 +1,6 @@
+[
+  { "kind": "markdown", "value": "# Test Notebook\nThis is a markdown cell." },
+  { "kind": "code", "value": "print('hello from a cell')" },
+  { "kind": "code", "value": "x = 5\nprint(x * 2)" },
+  { "kind": "code", "value": "print(1/0)" }
+]

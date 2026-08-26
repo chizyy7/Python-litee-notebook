@@ -1,0 +1,4 @@
+[
+  { "kind": "markdown", "value": "# Matplotlib Test\nThis notebook tests matplotlib plotting in Python Lite Notebook." },
+  { "kind": "code", "value": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate some test data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 6))\nplt.plot(x, y, 'b-', linewidth=2)\nplt.title('Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\n\n# Display the plot (this should now work with our changes)\nplt.show()" }
+]

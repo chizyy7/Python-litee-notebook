@@ -1,0 +1,7 @@
+[
+  { "kind": "markdown", "value": "# ML Libraries Test\nThis notebook tests that common ML libraries work in Python Lite Notebook." },
+  { "kind": "code", "value": "# Test NumPy\nimport numpy as np\nprint('NumPy version:', np.__version__)\narr = np.array([1, 2, 3, 4, 5])\nprint('Array:', arr)\nprint('Mean:', np.mean(arr))" },
+  { "kind": "code", "value": "# Test Pandas\nimport pandas as pd\nprint('Pandas version:', pd.__version__)\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint('DataFrame:')\nprint(df)" },
+  { "kind": "code", "value": "# Test Matplotlib\nimport matplotlib\nprint('Matplotlib version:', matplotlib.__version__)\nimport matplotlib.pyplot as plt\n# Simple plot\nplt.figure()\nplt.plot([1, 2, 3, 4], [1, 4, 2, 3])\nplt.title('Simple Plot')\n# This should generate image output now\nplt.show()" },
+  { "kind": "code", "value": "# Test Scikit-learn\nimport sklearn\nprint('Scikit-learn version:', sklearn.__version__)\nfrom sklearn.datasets import make_classification\nX, y = make_classification(n_samples=100, n_features=4, random_state=42)\nprint('Generated dataset shape:', X.shape)" }
+]

@@ -1,0 +1,55 @@
+{
+  "name": "python-lite-notebook",
+  "version": "1.0.0",
+  "description": "A minimal VS Code extension for Python Lite Notebooks (.plnb)",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "activationEvents": [
+    "onNotebook:python-lite-notebook"
+  ],
+  "contributes": {
+    "notebooks": [
+      {
+        "type": "python-lite-notebook",
+        "displayName": "Python Lite Notebook",
+        "selector": [
+          {
+            "filenamePattern": "*.plnb"
+          }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "python-lite-notebook.restartKernel",
+        "title": "Python Lite: Restart Kernel"
+      },
+      {
+        "command": "python-lite-notebook.newNotebook",
+        "title": "Python Lite: New Notebook"
+      },
+      {
+        "command": "python-lite-notebook.testZmqInHost",
+        "title": "Python Lite: Test ZMQ in Host"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.2.0",
+    "@types/node": "^20.11.24",
+    "@types/vscode": "^1.88.0",
+    "electron": "^43.4.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "zeromq": "^6.6.0"
+  }
+}

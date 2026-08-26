@@ -1,0 +1,4 @@
+[
+  { "kind": "markdown", "value": "# Multi-Plot Test\nThis notebook tests multiple matplotlib plots and subplots." },
+  { "kind": "code", "value": "# Test multiple separate plots\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Create some data\nx = np.linspace(0, 10, 100)\n\n# First plot\nplt.figure()\nplt.plot(x, np.sin(x))\nplt.title('Sine Wave')\nplt.show()\n\n# Second plot\nplt.figure()\nplt.plot(x, np.cos(x), 'r-')\nplt.title('Cosine Wave')\nplt.show()" }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "kind": "markdown",
+    "value": "# Python Lite Notebook — Demo\nThis notebook demonstrates core functionality: text output, error handling, ML libraries, and visualization."
+  },
+  {
+    "kind": "markdown",
+    "value": "## Basic Execution"
+  },
+  {
+    "kind": "code",
+    "value": "print('Hello from Python Lite Notebook!')"
+  },
+  {
+    "kind": "code",
+    "value": "print(1/0)"
+  },
+  {
+    "kind": "markdown",
+    "value": "## ML Libraries"
+  },
+  {
+    "kind": "code",
+    "value": "import numpy as np\nimport pandas as pd\nimport matplotlib\nimport sklearn\nprint('NumPy version:', np.__version__)\nprint('Pandas version:', pd.__version__)\nprint('Matplotlib version:', matplotlib.__version__)\nprint('Scikit-learn version:', sklearn.__version__)"
+  },
+  {
+    "kind": "markdown",
+    "value": "## Visualization"
+  },
+  {
+    "kind": "code",
+    "value": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# Generate some test data\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\n# Create a plot\nplt.figure(figsize=(8, 6))\nplt.plot(x, y, 'b-', linewidth=2)\nplt.title('Sine Wave')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\n\n# Display the plot\nplt.show()"
+  },
+  {
+    "kind": "markdown",
+    "value": "## Visualization (continued)"
+  },
+  {
+    "kind": "code",
+    "value": "# Test subplots\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Create some data\nx = np.linspace(0, 10, 100)\n\n# Create subplots\nplt.figure(figsize=(10, 8))\n\nplt.subplot(2, 2, 1)\nplt.plot(x, np.sin(x))\nplt.title('Sine')\n\nplt.subplot(2, 2, 2)\nplt.plot(x, np.cos(x))\nplt.title('Cosine')\n\nplt.subplot(2, 2, 3)\nplt.plot(x, np.tan(x))\nplt.title('Tangent')\n\nplt.subplot(2, 2, 4)\nplt.scatter(x[:20], np.sin(x[:20]))\nplt.title('Sine Scatter')\n\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "kind": "markdown",
+    "value": "## Full ML Workflow"
+  },
+  {
+    "kind": "code",
+    "value": "# Test ML workflow\nimport numpy as np\nimport pandas as pd\nfrom sklearn.datasets import load_digits\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score\n\n# Load data\ndigits = load_digits()\nX_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.2)\n\n# Train model\nclf = DecisionTreeClassifier().fit(X_train, y_train)\n\n# Evaluate\naccuracy = accuracy_score(y_test, clf.predict(X_test))\nprint(\"Accuracy:\", accuracy)\n\n# Also show some basic info\nprint(f\"Training set size: {X_train.shape}\")\nprint(f\"Test set size: {X_test.shape}\")"
+  }
+]

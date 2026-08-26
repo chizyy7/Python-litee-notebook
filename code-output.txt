@@ -1,0 +1,94 @@
+
+[main 2026-08-19T11:46:35.200Z] PolicyConfiguration#initialize
+[main 2026-08-19T11:46:35.203Z] PolicyConfiguration#updatePolicyDefinitions [
+  'update.mode',
+  'update.channel',
+  'update.enableWindowsBackgroundUpdates',
+  'update.showReleaseNotes',
+  'update.showPostInstallInfo',
+  'update.titleBar',
+  'http.useLocalProxyConfiguration',
+  'http.electronFetch',
+  'http.proxy',
+  'http.proxyStrictSSL',
+  'http.proxyKerberosServicePrincipal',
+  'http.noProxy',
+  'http.proxyAuthorization',
+  'http.proxySupport',
+  'http.systemCertificates',
+  'http.systemCertificatesNode',
+  'http.experimental.systemCertificatesV2',
+  'http.fetchAdditionalSupport',
+  'http.webSocketAdditionalSupport',
+  'http.experimental.networkInterfaceCheckInterval',
+  'telemetry.telemetryLevel',
+  'telemetry.feedback.enabled',
+  'telemetry.enableTelemetry',
+  'extensions.allowed',
+  'chat.agentHost.agentMerge.enabled',
+  'chat.agentHost.agentMerge.addressReviews',
+  'chat.agentHost.agentMerge.fixCI',
+  'chat.agentHost.agentMerge.resolveConflicts',
+  'chat.agentHost.agentMerge.mergePullRequest',
+  'chat.agentHost.agentMerge.mergeMethod',
+  'chat.agentHost.agentMerge.replyAttribution',
+  'chat.agentHost.experimental.activeAgentTitleGeneration',
+  'chat.agentHost.experimental.markdownPlanRichLinks',
+  'chat.agentHost.systemProxy.enabled',
+  'chat.agentHost.claudeAgent.enabled',
+  'chat.agentHost.byokModels.enabled',
+  'chat.agentHost.codexAgent.enabled',
+  'chat.agentHost.otel.enabled',
+  'chat.agentHost.otel.exporterType',
+  'chat.agentHost.otel.otlpEndpoint',
+  'chat.agentHost.otel.captureContent',
+  'chat.agentHost.otel.outfile',
+  'chat.agentHost.otel.dbSpanExporter.enabled'
+]
+[main 2026-08-19T11:46:35.205Z] NativePolicyService#_updatePolicyDefinitions - Found 11 policy definitions
+[main 2026-08-19T11:46:35.307Z] Creating watcher for productName VSCode
+[main 2026-08-19T11:46:35.318Z] NativePolicyService#_onDidPolicyChange - Updated policy values: {}
+[main 2026-08-19T11:46:35.319Z] PolicyConfiguration#update [
+  'update.mode',
+  'telemetry.telemetryLevel',
+  'telemetry.feedback.enabled',
+  'extensions.allowed',
+  'chat.agentHost.claudeAgent.enabled',
+  'chat.agentHost.codexAgent.enabled',
+  'chat.agentHost.otel.enabled',
+  'chat.agentHost.otel.exporterType',
+  'chat.agentHost.otel.otlpEndpoint',
+  'chat.agentHost.otel.captureContent',
+  'chat.agentHost.otel.outfile'
+]
+[main 2026-08-19T11:46:35.320Z] PolicyConfiguration#updatePolicyDefinitions [
+  'chat.agentHost.copilotAgent.multiRootEnabled',
+  'chat.agentHost.claudeAgent.multiRootEnabled',
+  'chat.agentHost.codexAgent.multiRootEnabled',
+  'chat.agentHost.codexAgent.sdkRoot',
+  'chat.agentHost.codexAgent.codexHome',
+  'chat.agentHost.codexAgent.binaryArgs',
+  'chat.agentHost.otel.otlpProtocol',
+  'chat.agentHost.otel.serviceName',
+  'chat.agentHost.otel.resourceAttributes',
+  'chat.agentHost.otel.headers'
+]
+[main 2026-08-19T11:46:35.321Z] NativePolicyService#_updatePolicyDefinitions - Found 15 policy definitions
+[main 2026-08-19T11:46:35.340Z] Creating watcher for productName VSCode
+[main 2026-08-19T11:46:35.341Z] [File Watcher (node.js)] Request to start watching: c:\Program Files\GitHubCopilot\managed-settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),c:\Users\chizy\AppData\Roaming\Code\User (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),c:\Users\chizy\AppData\Roaming\Code\User\settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[main 2026-08-19T11:46:35.344Z] NativePolicyService#_onDidPolicyChange - Updated policy values: {}
+[main 2026-08-19T11:46:35.345Z] PolicyConfiguration#update [
+  'chat.agentHost.otel.otlpProtocol',
+  'chat.agentHost.otel.serviceName',
+  'chat.agentHost.otel.resourceAttributes',
+  'chat.agentHost.otel.headers'
+]
+[main 2026-08-19T11:46:35.347Z] [File Watcher (node.js)] ignoring a path for watching who's stat info failed to resolve: c:\Program Files\GitHubCopilot\managed-settings.json (error: Error: ENOENT: no such file or directory, stat 'c:\Program Files\GitHubCopilot\managed-settings.json')
+[main 2026-08-19T11:46:35.348Z] [File Watcher (node.js)] starting fs.watchFile() on c:\Program Files\GitHubCopilot\managed-settings.json (correlationId: undefined)
+[main 2026-08-19T11:46:35.376Z] [File Watcher (node.js)] Started watching: 'c:\Users\chizy\AppData\Roaming\Code\User'
+[main 2026-08-19T11:46:35.383Z] [File Watcher (node.js)] Started watching: 'c:\Users\chizy\AppData\Roaming\Code\User\settings.json'
+[main 2026-08-19T11:46:35.386Z] Sending some foreground love to the running instance: 5176
+[main 2026-08-19T11:46:35.556Z] Sending env to running instance...
+[main 2026-08-19T11:46:35.694Z] Sent env to running instance. Terminating...
+[main 2026-08-19T11:46:35.695Z] Lifecycle#kill()
+[main 2026-08-19T11:46:35.695Z] Lifecycle#onWillShutdown.fire()
